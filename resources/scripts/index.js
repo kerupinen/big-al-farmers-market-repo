@@ -1,7 +1,7 @@
 function handleOnLoad()
 {
     //getting url
-    const feedUrl = "https://localhost:5001/api/post";
+    const feedUrl = "https://localhost:5001/api/Vendor";
     //getting posts from url
     fetch(feedUrl).then(function(response){
         return response.json();
