@@ -1,7 +1,7 @@
 function handleOnLoad()
 {
     //getting url
-    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/";
+    const feedUrl = "https://localhost:5001/api/Vendor";
     //getting posts from url
     fetch(feedUrl).then(function(response){
         return response.json();
