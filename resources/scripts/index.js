@@ -22,7 +22,7 @@ function setFeed(json)
     var html = "<ul>";
     //for each post..
     json.forEach(vendor => {
-    html += "<li></div><span>" + vendor.MerchType +"</span></li>"; 
+    html += "<li>" + vendor.username +" "+vendor.registerSpot+"</li>"; 
 });
 
     
