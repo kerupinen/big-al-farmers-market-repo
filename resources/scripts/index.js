@@ -1,7 +1,7 @@
 function handleOnLoad()
 {
     //getting url
-    const feedUrl = "https://localhost:5001/api/Vendor";
+    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/";
     //getting posts from url
     fetch(feedUrl).then(function(response){
         return response.json();
@@ -22,7 +22,7 @@ function setFeed(json)
     var html = "<ul>";
     //for each post..
     json.forEach(vendor => {
-    html += "<li>" + vendor.username +" "+vendor.registerSpot+"</li>"; 
+    html += "<li>"+vendor.merchType+"</li>"; 
 });
 
     
