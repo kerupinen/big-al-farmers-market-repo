@@ -1,0 +1,93 @@
+body {
+    background: rgb(159,194,255);
+    background: linear-gradient(90deg, rgba(159,194,255,1) 0%, rgba(131,206,255,1) 52%, rgba(132,234,255,1) 100%);
+    font-family: 'Actor';
+    padding: 50px;
+}
+
+.header {
+    color: #4c4c4c;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 9px 9px 2px rgba(0, 0, 0, 0.14);
+}
+
+.leftcolumn { 
+    color: #4c4c4c;
+    text-align: center;
+    float: left;
+    width: 500px;
+    padding-right: 30px;
+}
+
+.navcolumn{
+    color: #4c4c4c;
+    text-align: center;
+    float: left;
+    width: 500px;
+    padding-right: 30px;
+}
+
+.rightcolumn {
+    color: #4c4c4c;
+    float: right;
+    width: 700px;
+    padding-left: 90px;
+}
+
+
+.image {
+    background-color: #aaa;
+    width: 95%;
+    padding: 20px;
+}
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 9px 9px 2px rgba(0, 0, 0, 0.14);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-right{
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 100px;
+}
+
+.header2-right{
+    font-size: 20px;
+    text-align: center;
+    word-spacing: px;
+}
+
+a {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Actor';
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Actor';
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: #96beff;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 0%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+}
+
