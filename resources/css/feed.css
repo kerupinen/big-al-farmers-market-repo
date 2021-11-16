@@ -18,23 +18,20 @@ body {
     color: #4c4c4c;
     text-align: center;
     float: left;
-    width: 500px;
-    padding-right: 30px;
+    width: 600px;
 }
 
 .navcolumn{
     color: #4c4c4c;
     text-align: center;
     float: left;
-    width: 500px;
-    padding-right: 30px;
+    width: 600px;
 }
 
 .rightcolumn {
     color: #4c4c4c;
     float: right;
     width: 700px;
-    padding-left: 90px;
 }
 
 
