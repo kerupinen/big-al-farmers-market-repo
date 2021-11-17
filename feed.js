@@ -26,10 +26,10 @@ function setFeed(json)
 
     json.forEach(vendor => {
     html += `<div class = "post">`;
-    html += `<h2>${vendor.venName}</h2>`;
-    html += `<img src="${vendor.images}" alt = "https://multichannelmerchant.com/wp-content/uploads/2019/09/stupid-vendor-image-with-scrabble-tiles-feature.jpg" width = "auto" height = "auto"></img>`;
+    html += `<h2>${vendor.vendorName}</h2>`;
+    html += `<img src="${vendor.image}" alt = "https://multichannelmerchant.com/wp-content/uploads/2019/09/stupid-vendor-image-with-scrabble-tiles-feature.jpg" width = "auto" height = "auto"></img>`;
     html += `<h3>Merch Type: ${vendor.merchType}</h3>`
-    html += `<p>${vendor.desctiption}</p>`;
+    html += `<p>${vendor.description}</p>`;
     html += `</div>`;
 });
 
