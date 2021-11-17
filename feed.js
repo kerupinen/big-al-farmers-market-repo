@@ -25,7 +25,6 @@ function setFeed(json)
 
 
     json.forEach(vendor => {
-    html += "<li>"+vendor.merchType+"</li>";
     html += `<div class = "post">`;
     html += `<h2>${vendor.venName}</h2>`;
     html += `<img src="${vendor.images}" alt = "https://multichannelmerchant.com/wp-content/uploads/2019/09/stupid-vendor-image-with-scrabble-tiles-feature.jpg" width = "auto" height = "auto"></img>`;
