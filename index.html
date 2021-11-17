@@ -20,9 +20,10 @@
         <p class="welcome" align="center">Welcome to Big Al's Farmers Market!</p>   
         <p class="signin" align="center">Vendor Sign in</p>
         <form class="form1">
-        <input class="username" type="text" align="center" placeholder="Username">
-        <input class="password" type="password" align="center" placeholder="Password">
-        <a class="signinbutton" align="center">Sign in</a>
+        <input class="vendor id" type="text" align="center" placeholder="Vendor ID" id ="idBox" required>
+        <input class="username" type="text" align="center" placeholder="Username" id ="userBox" required>
+        <input class="password" type="password" align="center" placeholder="Password" id="passBox" required>
+        <a class="signinbutton" align="center" onclick = "handleOnSubmit()">Sign in</a>
         <p class="newuser">New User? <a href="#"> Register</p>       
     </body> 
 </body>
