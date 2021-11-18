@@ -1,7 +1,7 @@
 function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
-    fetch(peopleUrl).then(function(response){
+    fetch(feedUrl).then(function(response){
         return response.json();
     }).then(function(json){
         json.forEach(vendor =>{
