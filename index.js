@@ -11,7 +11,8 @@ function handleOnSubmit()
                 {
                     if(vendor.password=document.getElementById("passBox"))
                     {
-                        href = "practice.html";
+                        //href = "practice.html";
+                        <a href="practice.html"></a>
                 
                     }
                 }
@@ -28,5 +29,5 @@ function handleOnSubmit()
 
 function handleOnLoad()
 {
-    
+
 }
