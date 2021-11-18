@@ -18,7 +18,7 @@ function handleOnSubmit()
             }
         })
 
-        
+
         
 
     }).catch(function(error){
@@ -26,3 +26,7 @@ function handleOnSubmit()
     });
 }
 
+function handleOnLoad()
+{
+    
+}
