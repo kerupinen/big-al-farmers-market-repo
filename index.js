@@ -12,7 +12,9 @@ function handleOnSubmit()
                     if(vendor.password=document.getElementById("passBox"))
                     {
                         //href = "practice.html";
-                        <a href="practice.html"></a>
+                       var html = `<a href="practice.html"></a>`
+
+                       document.getElementById("passBox").innerhtml = html;
                 
                     }
                 }
