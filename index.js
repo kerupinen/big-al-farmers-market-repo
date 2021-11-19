@@ -23,8 +23,8 @@ function handleOnSubmit()
             console.log(error);
         });
         */
-       location.reload();
-       window.location.href = "https://bigal-farmer-app.herokuapp.com/";
+       //location.reload();
+       window.location.href = "vendorPractice.html";
 
 
 
