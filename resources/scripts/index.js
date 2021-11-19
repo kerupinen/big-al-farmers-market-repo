@@ -24,7 +24,7 @@ function handleOnSubmit()
         });
         */
        //location.reload();
-       window.location.href = "vendorPractice.html";
+       window.location.href = "feed.html";
 
 
 
