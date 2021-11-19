@@ -2,7 +2,7 @@ function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
     fetch(feedUrl, {
-        method: "GET",
+        method: "GETS",
         headers: 
         {
             "Accept": "application/json",
@@ -24,7 +24,7 @@ function handleOnSubmit()
         });
 
 
-    }
+}
 
         
 
