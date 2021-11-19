@@ -1,6 +1,6 @@
 function handleOnSubmit()
 {
-    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
+    /*const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
     fetch(feedUrl, {
         method: "GETS",
         headers: 
@@ -22,6 +22,9 @@ function handleOnSubmit()
         }).catch(function(error){
             console.log(error);
         });
+        */
+       location.reload();
+
 
 
 }
