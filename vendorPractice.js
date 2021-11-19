@@ -1,4 +1,4 @@
-function handleOnEdit(id)
+function handleOnSubmit()
 {
 
     const feedurl ="https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/"+document.getElementById("venIdBox");
