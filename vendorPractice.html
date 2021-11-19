@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/vendorPractice.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAFM Vendors</title>
-    <script type = "text/javascript" src = "vendorPractice.js"></script>
+    <script type = "text/javascript" src = "resources/scripts/vendorPractice.js"></script>
 </head>
 <body>
-
-    <input class="username" type="int" align="center" placeholder="Vendor ID" id ="venIdBox" required>
-    <input class="username" type="text" align="center" placeholder="Merchandise Type" id ="merchBox" required>
-    <input class="password" type="text" align="center" placeholder="Vendor Name" id="venNameBox" required>
-    <input class="password" type="text" align="center" placeholder="Image Address" id="imageBox" required>
-    <input class="password" type="text" align="center" placeholder="Description" id="descBox" required>
-    <a class="signinbutton" align="center" onclick = "handleOnSubmit()">Add Post</a>
-
+    <div class="main"> 
+        <form class="form1">
+            <input class="username" type="int" align="center" placeholder="Vendor ID" id ="venIdBox" required>
+            <input class="username" type="text" align="center" placeholder="Merchandise Type" id ="merchBox" required>
+            <input class="password" type="text" align="center" placeholder="Vendor Name" id="venNameBox" required>
+            <input class="password" type="text" align="center" placeholder="Image Address" id="imageBox" required>
+            <input class="password" type="text" align="center" placeholder="Description" id="descBox" required>
+            <a class="addpost" align="center" onclick = "handleOnSubmit()">Add Post</a>
+        </form>
+    </div>
     
 </body>
 </html>
