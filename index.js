@@ -24,6 +24,8 @@ function handleOnSubmit()
         });
         */
        location.reload();
+       window.location.href = "https://bigal-farmer-app.herokuapp.com/";
+
 
 
 

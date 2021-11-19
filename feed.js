@@ -28,7 +28,7 @@ function setFeed(json)
     html += `<div class = "post">`;
     html += `<h2>${vendor.vendorName}</h2>`;
     html += `<img src="${vendor.image}" width = "500" height = "300" onerror="this.src='https://m.media-amazon.com/images/I/71fTy0gwcrL._AC_SX425_.jpg'"></img>`;
-    html += `<h3>Merch Type: ${vendor.merchType}</h3>`
+    html += `<h3>Merchandise: ${vendor.merchType}</h3>`
     html += `<p>${vendor.description}</p>`;
     html += `</div>`;
 });
