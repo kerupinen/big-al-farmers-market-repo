@@ -1,33 +1,33 @@
 function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
-    fetch(feedUrl).then(function(response){
-        return response.json();
-    }).then(function(json){
-        json.forEach(vendor =>{
-            if(vendor.id = document.getElementById("idBox"))
-            {
-                if(vendor.username = document.getElementById("userBox"))
-                {
-                    if(vendor.password=document.getElementById("passBox"))
-                    {
-                        //href = "practice.html";
-                       var html = `href="practice.html`
+    fetch(feedUrl, {
+        method: "GET",
+        headers: 
+        {
+            "Accept": "application/json",
+            "Content-type": "application/json"
+        },
 
-                       document.getElementById("signinbutton").innerhtml = html;
-                
-                    }
-                }
-            }
+        body: JSON.stringify({
+            
+            username : document.getElementById("userBox").value,
+            password : document.getElementById("passBox").value
+
         })
 
+        }).then(function(response){
+            //reshowing all the posts including newest one
+            //handleOnLoad();
+        }).catch(function(error){
+            console.log(error);
+        });
+
+
+    }
 
         
 
-    }).catch(function(error){
-        console.log(error);
-    });
-}
 
 function handleOnLoad()
 {
