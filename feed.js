@@ -27,8 +27,9 @@ function setFeed(json)
     json.forEach(vendor => {
     html += `<div class = "post">`;
     html += `<h2>${vendor.vendorName}</h2>`;
+    html += `<h3>Spot Number: ${vendor.registerSpot}</h3>`
     html += `<img src="${vendor.image}" width = "500" height = "300" onerror="this.src='https://m.media-amazon.com/images/I/71fTy0gwcrL._AC_SX425_.jpg'"></img>`;
-    html += `<h3>Merchandise: ${vendor.merchType}</h3>`
+    html += `<h4>Merchandise: ${vendor.merchType}</h4>`
     html += `<p>${vendor.description}</p>`;
     html += `</div>`;
 });
