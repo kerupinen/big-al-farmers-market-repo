@@ -6,6 +6,7 @@ body {
 }
 
 .main {
+    border-radius: 10px;
     background-color: #FFFFFF;
     width: 400px;
     height: 350px;
@@ -98,8 +99,4 @@ a {
 
 .media {
     max-width: 600px
-}
-
-.main{
-    border-radius: 0px;
 }
