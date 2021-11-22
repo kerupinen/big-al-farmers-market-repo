@@ -28,6 +28,7 @@ function handleOnSubmit()
         }).catch(function(error){
             console.log(error);
             //"login not found"
+            window.alert("The entered username and password were not found");
         });
         
        //location.reload();
