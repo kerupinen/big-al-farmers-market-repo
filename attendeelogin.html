@@ -7,7 +7,7 @@
     <title>Big Al's Farmer's Market</title>
 </head>
 <body onload = "handleOnLoad()">
-    <script type = "text/javascript" src = "./resources/scripts/index.js"></script>
+    <script type = "text/javascript" src = "./resources/scripts/attendeelogin.js"></script>
     
     <head>
         <link rel="stylesheet" href="resources/css/index.css">
@@ -22,7 +22,7 @@
         <form class="form1">
         <input class="username" type="text" align="center" placeholder="Username" id ="userBox" required>
         <input class="password" type="password" align="center" placeholder="Password" id="passBox" required>
-        <a class="signinbutton" align="center" href="feed.html">Sign in</a>
+        <a class="signinbutton" align="center" onclick="handleOnSubmit()">Sign in</a>
         <p class="newuser">New User? <a href="attendeeSignUp.html"> Register</p>       
     </body> 
 </body>
