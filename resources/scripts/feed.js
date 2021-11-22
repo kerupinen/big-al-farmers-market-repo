@@ -40,3 +40,8 @@ html += "</ul>";
 //add html
 venFeed.innerHTML = html;
 }
+
+function handleOnLoad()
+{
+
+}
