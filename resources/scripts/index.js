@@ -17,14 +17,14 @@ function handleOnSubmit()
         })
 
         }).then(function(response){
-            //reshowing all the posts including newest one
-            //handleOnLoad();
+            console.log(response);
+            //window.location.href = "feed.html";
         }).catch(function(error){
             console.log(error);
         });
         
        //location.reload();
-       window.location.href = "feed.html";
+       
 
 
 
