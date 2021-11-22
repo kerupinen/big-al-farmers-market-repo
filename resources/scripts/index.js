@@ -19,12 +19,15 @@ function handleOnSubmit()
         }).then(function(response){
             return response.json();
     
-            //window.location.href = "feed.html";
+            
 
         }).then(function(json){
+            localStorage.setItem("loggedInVendor",json);
+            window.location.href = "feed.html";
             console.log(json);
         }).catch(function(error){
             console.log(error);
+            //"login not found"
         });
         
        //location.reload();
