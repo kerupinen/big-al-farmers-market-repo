@@ -41,7 +41,3 @@ html += "</ul>";
 venFeed.innerHTML = html;
 }
 
-function handleOnLoad()
-{
-
-}
