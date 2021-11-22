@@ -17,8 +17,12 @@ function handleOnSubmit()
         })
 
         }).then(function(response){
-            console.log(response);
+            return response.json();
+    
             //window.location.href = "feed.html";
+
+        }).then(function(json){
+            console.log(json);
         }).catch(function(error){
             console.log(error);
         });
