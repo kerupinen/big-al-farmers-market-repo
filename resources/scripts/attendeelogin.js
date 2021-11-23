@@ -22,7 +22,7 @@ function handleOnSubmit()
             
 
         }).then(function(json){
-            localStorage.setItem("loggedInAttendee",json);
+            localStorage.setItem("loggedInAttendee",username);
             window.location.href = "feed.html";
             console.log(json);
         }).catch(function(error){
