@@ -41,3 +41,23 @@ html += "</ul>";
 venFeed.innerHTML = html;
 }
 
+
+function giveReport()
+{
+    const giveUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Attendee/report"
+
+    fetch(feedUrl).then(function(response){
+        return response.json();
+    }).then(function(json){
+        console.log(json);
+        //showing posts
+        //setFeed(json);
+    }).catch(function(error){
+        console.log(error);
+    });
+
+
+
+
+}
+
