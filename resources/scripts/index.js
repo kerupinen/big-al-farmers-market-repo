@@ -22,7 +22,7 @@ function handleOnSubmit()
             
 
         }).then(function(json){
-            localStorage.setItem("loggedInVendor",username);
+            localStorage.setItem("loggedInVendor",document.getElementById("userBox").value);
             window.location.href = "feed.html";
             console.log(json);
         }).catch(function(error){
