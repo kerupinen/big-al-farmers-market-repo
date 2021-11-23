@@ -1,6 +1,6 @@
 function handleOnSubmit()
 {
-    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Attendee/attendeeInfo";
+    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Attendee/aInfo";
     fetch(feedUrl, {
         method: "POST",
         headers: 
