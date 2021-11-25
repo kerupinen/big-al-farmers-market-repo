@@ -1,6 +1,8 @@
 function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/vendorInfo";
+    const userName = document.getElementById("userBox").value;
+    const password = document.getElementById("passBox").value;
     fetch(feedUrl, {
         method: "POST",
         headers: 
@@ -11,20 +13,21 @@ function handleOnSubmit()
 
         body: JSON.stringify({
             
-            username : document.getElementById("userBox").value,
-            password : document.getElementById("passBox").value
+            username : userName,
+            password : password
 
         })
 
-        }).then(function(response){
-            return response.json();
+        // }).then(function(response){
+        //     return response.json();
     
             
 
         }).then(function(json){
-            sessionStorage.setItem("loggedInVendor",document.getElementById("userBox").value);
+            sessionStorage.setItem("loggedInVendor", userName);
             window.location.href = "feed.html";
             console.log(json);
+            console.log(sessionStorage);
         }).catch(function(error){
             console.log(error);
             //"login not found"
