@@ -3,9 +3,7 @@ function handleOnLoad()
     //getting url
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
     //getting posts from url
-    fetch(feedUrl).then(function(response){
-        return response.json();
-    }).then(function(json){
+    fetch(feedUrl).then(function(json){
         console.log(json);
         //showing posts
         setFeed(json);
@@ -46,9 +44,7 @@ function giveReport()
 {
     const giveUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Attendee/report"
 
-    fetch(giveUrl).then(function(response){
-        return response.json();
-    }).then(function(json){
+    fetch(giveUrl).then(function(json){
         console.log(json);
         //showing posts
         //setFeed(json);
