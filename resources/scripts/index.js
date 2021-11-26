@@ -16,16 +16,14 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
-            
             username : userName,
             password : password
-
         })
     }).then(function(json){
         console.log(json);
         console.log(json.vendor);
         sessionStorage.setItem("loggedInVendor", json.venNum);
-        window.location.href = "feed.html";
+        // window.location.href = "feed.html";
     }).catch(function(error){
         console.log(error);
         //"login not found"
