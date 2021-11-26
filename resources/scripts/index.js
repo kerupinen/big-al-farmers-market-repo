@@ -19,10 +19,11 @@ function handleOnSubmit()
             username : userName,
             password : password
         })
-    }).then(function(json){
-        console.log(json);
-        console.log(json.vendor);
-        sessionStorage.setItem("loggedInVendor", json.venNum);
+    }).then(response => response.json())
+    .then(function(data){
+        console.log(data);
+        console.log(data.vendor);
+        sessionStorage.setItem("loggedInVendor", data.venNum);
         // window.location.href = "feed.html";
     }).catch(function(error){
         console.log(error);
