@@ -15,10 +15,10 @@ function handleOnSubmit()
             password : document.getElementById("passBox").value
 
         })
-    }).then(function(json){
+    }).then(response => response.json())
+    .then(function(data){
         sessionStorage.setItem("loggedInAttendee",document.getElementById("userBox").value);
         window.location.href = "feed.html";
-        console.log(json);
     }).catch(function(error){
         console.log(error);
         //"login not found"

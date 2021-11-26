@@ -12,7 +12,8 @@ function registerVendor()
         body: JSON.stringify({
             venNum : sessionStorage.getItem("loggedInVendor")
         })
-    }).then(function(json){
+    }).then(response => response.json())
+    .then(function(json){
         if(json.RegisterSpot!=0)
         {
             window.alert("You have been registered! Your Number is " +json.RegisterSpot);

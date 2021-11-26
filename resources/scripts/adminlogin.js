@@ -15,7 +15,8 @@ function handleOnSubmit()
             password : document.getElementById("passBox").value
 
         })
-    }).then(function(json){
+    }).then(response => response.json())
+    .then(function(json){
         sessionStorage.setItem("loggedInAdmin",document.getElementById("userBox").value);
         window.location.href = "feed.html";
         console.log(json);
