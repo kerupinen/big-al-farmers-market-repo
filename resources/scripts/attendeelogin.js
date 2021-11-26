@@ -18,7 +18,7 @@ function handleOnSubmit()
     }).then(response => response.json())
     .then(function(data){
         sessionStorage.setItem("loggedInAttendee",document.getElementById("userBox").value);
-        window.location.href = "feed.html";
+        window.location.href = "feedattendee.html";
     }).catch(function(error){
         console.log(error);
         //"login not found"

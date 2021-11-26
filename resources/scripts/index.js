@@ -22,7 +22,7 @@ function handleOnSubmit()
     }).then(response => response.json())
     .then(function(vendor){
         sessionStorage.setItem("loggedInVendor", vendor.venNum);
-        window.location.href = "feed.html";
+        window.location.href = "feedVendor.html";
     }).catch(function(error){
         console.log(error);
         //"login not found"
