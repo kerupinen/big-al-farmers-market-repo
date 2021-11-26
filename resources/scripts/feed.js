@@ -3,16 +3,17 @@ function handleOnLoad()
     //getting url
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor";
     //getting posts from url
-    fetch(feedUrl).then(function(json){
+    fetch(feedUrl).then(response => response.json())
+    .then(function(vendors){
         console.log(json);
         //showing posts
-        setFeed(json);
+        setFeed(vendors);
     }).catch(function(error){
         console.log(error);
     });
 }
 
-function setFeed(json)
+function setFeed(vendors)
 {
     //getting where greets will go
     var venFeed = document.getElementById("feed");
@@ -22,7 +23,7 @@ function setFeed(json)
 
 
 
-    json.forEach(vendor => {
+    vendors.forEach(vendor => {
     html += `<div class = "post">`;
     html += `<h2>${vendor.vendorName}</h2>`;
     html += `<h3>Spot Number: ${vendor.registerSpot}</h3>`
@@ -51,10 +52,4 @@ function giveReport()
     }).catch(function(error){
         console.log(error);
     });
-
-
-
-
 }
-
-
