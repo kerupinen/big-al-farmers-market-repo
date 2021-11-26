@@ -5,7 +5,7 @@ function handleOnLoad()
     //getting posts from url
     fetch(feedUrl).then(response => response.json())
     .then(function(vendors){
-        console.log(json);
+        console.log(vendors);
         //showing posts
         setFeed(vendors);
     }).catch(function(error){
