@@ -20,6 +20,7 @@ function handleOnSubmit()
     }).then(function(response){
         return response.json();
     }).then(function(json){
+        console.log("Here be dragons");
         sessionStorage.setItem("loggedInVendor", userName);
         console.log(json);
         console.log(sessionStorage);
