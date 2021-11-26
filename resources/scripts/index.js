@@ -19,10 +19,9 @@ function handleOnSubmit()
             username : userName,
             password : password
         })
-    }).then(response => response.json())
-    .then(function(data){
+    }).then(function(response){
+        var data = response.json();
         console.log(data);
-        console.log(data.vendor);
         sessionStorage.setItem("loggedInVendor", data.venNum);
         // window.location.href = "feed.html";
     }).catch(function(error){
