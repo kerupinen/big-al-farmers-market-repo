@@ -10,18 +10,15 @@ function registerVendor()
         },
 
         body: JSON.stringify({
-            vendorName : document.getElementById("userBox").value
+            venNum : sessionStorage.getItem("loggedInVendor")
         })
     }).then(function(json){
-        //spot between 1-30 that has not already been taken
-        if(RegisterSpot == 0)
+        if(json.RegisterSpot!=0)
         {
-            //new int
-            //check()
-            RegisterSpot = 1;
+            window.alert("You have been registered! Your Number is " +json.RegisterSpot);
         }
         else{
-            window.alert("You have already registered!");
+            window.alert("You were already signed up! Your Number is "+json.RegisterSpot);
         }
         
         window.location.href = "feed.html";
