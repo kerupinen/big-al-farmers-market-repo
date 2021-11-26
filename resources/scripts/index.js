@@ -17,22 +17,18 @@ function handleOnSubmit()
             password : password
 
         })
-
-        // }).then(function(response){
-        //     return response.json();
-    
-            
-
-        }).then(function(json){
-            sessionStorage.setItem("loggedInVendor", userName);
-            console.log(json);
-            console.log(sessionStorage);
-            window.location.href = "feed.html";
-        }).catch(function(error){
-            console.log(error);
-            //"login not found"
-            window.alert("The entered username and password were not found, please try again");
-        });
+    }).then(function(response){
+        return response.json();
+    }).then(function(json){
+        sessionStorage.setItem("loggedInVendor", userName);
+        console.log(json);
+        console.log(sessionStorage);
+        window.location.href = "feed.html";
+    }).catch(function(error){
+        console.log(error);
+        //"login not found"
+        window.alert("The entered username and password were not found, please try again");
+    });
         
        //location.reload();
        
