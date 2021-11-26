@@ -1,6 +1,7 @@
 function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/vendorInfo";
+    console.log("Before submit");
     const userName = document.getElementById("userBox").value;
     const password = document.getElementById("passBox").value;
     fetch(feedUrl, {
