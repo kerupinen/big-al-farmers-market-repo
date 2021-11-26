@@ -31,7 +31,4 @@ function handleOnSubmit()
     });
 }
 
-function handleOnLoad()
-{
-
-}
+function handleOnLoad(){}

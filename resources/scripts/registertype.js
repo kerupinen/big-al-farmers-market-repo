@@ -14,3 +14,5 @@ function redirectVendor() {
         window.location.href = "vendorlogin.html";
     }
 }
+
+function handleOnLoad(){}

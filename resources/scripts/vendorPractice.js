@@ -1,7 +1,7 @@
 function handleOnSubmit()
 {
 
-    const feedurl ="https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/"+document.getElementById("venIdBox");
+    const feedurl ="https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/" + document.getElementById("venIdBox");
 
     fetch(feedUrl, {
         method: "PUT",
@@ -19,21 +19,10 @@ function handleOnSubmit()
             Description : document.getElementById("descBox").value
         })
     }).then(function(response){
-        
-
-        
-
         window.location.href = "feed.html";
-        
-    
-        }).catch(function(error){
+    }).catch(function(error){
         console.log(error);
-        });
-
-    
+    });
 }
 
-function handleOnLoad()
-{
-
-}
+function handleOnLoad(){}

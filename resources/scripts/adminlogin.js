@@ -15,21 +15,15 @@ function handleOnSubmit()
             password : document.getElementById("passBox").value
 
         })
-
-        }).then(function(response){
-            return response.json();
-    
-            
-
-        }).then(function(json){
-            sessionStorage.setItem("loggedInAdmin",document.getElementById("userBox").value);
-            window.location.href = "feed.html";
-            console.log(json);
-        }).catch(function(error){
-            console.log(error);
-            //"login not found"
-            window.alert("The entered username and password were not found, please try again");
-        });
+    }).then(function(json){
+        sessionStorage.setItem("loggedInAdmin",document.getElementById("userBox").value);
+        window.location.href = "feed.html";
+        console.log(json);
+    }).catch(function(error){
+        console.log(error);
+        //"login not found"
+        window.alert("The entered username and password were not found, please try again");
+    });
         
        //location.reload();
        
