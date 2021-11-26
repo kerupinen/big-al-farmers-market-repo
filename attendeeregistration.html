@@ -7,7 +7,7 @@
     <title>BAFM Attendee Registation</title>
 </head>
 <body onload = "handleOnLoad()">
-    <script type = "text/javascript" src = "insert javascript"></script>
+    <script type = "text/javascript" src = "resources/scripts/attendeeregister.js"></script>
     
     <head>
         <link rel="stylesheet" href="resources/css/registration.css">
@@ -19,9 +19,7 @@
         <div class="main">  
         <p class="reg" align="center">Attendee Registration</p>
         <form class="form1">
-            <input class="fname" type="text" align="center" placeholder="First Name" id ="userBox" required>
-            <input class="lname" type="text" align="center" placeholder="Last Name" id ="userBox" required>
-        <a class="regbutton" align="center" href="feed.html">Register</a>     
+        <a class="regbutton" align="center" onclick="attendeeRegister()">Register</a>     
     </body> 
 </body>
 </html>
