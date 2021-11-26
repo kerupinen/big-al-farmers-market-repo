@@ -22,6 +22,7 @@ function handleOnSubmit()
 
         })
     }).then(function(json){
+        console.log(json);
         sessionStorage.setItem("loggedInVendor", json.venNum);
         window.location.href = "feed.html";
     }).catch(function(error){
