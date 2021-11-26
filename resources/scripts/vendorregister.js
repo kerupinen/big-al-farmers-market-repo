@@ -22,7 +22,7 @@ function registerVendor()
             window.alert("You were already signed up! Your Number is "+json.RegisterSpot);
         }
         
-        window.location.href = "feed.html";
+        window.location.href = "feedVendor.html";
         console.log(json);
     }).catch(function(error){
         console.log(error);

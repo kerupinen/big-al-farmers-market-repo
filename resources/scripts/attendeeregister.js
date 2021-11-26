@@ -24,7 +24,7 @@ function registerAttendee()
             window.alert("You were already signed up! Your Number is "+json.registrationNum);
         }
         
-        window.location.href = "feed.html";
+        window.location.href = "feedAttendee.html";
         console.log(json);
     }).catch(function(error){
         console.log(error);
