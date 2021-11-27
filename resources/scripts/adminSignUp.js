@@ -16,10 +16,13 @@ function handleOnSubmit()
 
         }).then(function(attendee){
         window.alert("You have been signed up!");
-        window.location.href = "feedAttendee.html";
+        window.location.href = "attendeeLogin.html";
         console.log(json);
         }).catch(function(error){
-        window.alert("A user with that username already exists!")
+        if(error)
+        {
+        window.alert("A user with that username already exists!");
+        }
         console.log(error);
     });
 
