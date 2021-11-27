@@ -19,6 +19,7 @@ function handleOnSubmit()
         window.location.href = "feedAttendee.html";
         console.log(json);
         }).catch(function(error){
+        window.alert("A user with that username already exists!")
         console.log(error);
     });
 
