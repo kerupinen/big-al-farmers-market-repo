@@ -1,3 +1,85 @@
 table, th, td {
+    margin-top: 50px;
+    background-color: white;
     border: 1px solid black;
   }
+
+  body {
+    background: rgb(159,194,255);
+    background: linear-gradient(90deg, rgba(159,194,255,1) 0%, rgba(131,206,255,1) 52%, rgba(132,234,255,1) 100%);
+    font-family: 'Actor';
+    padding: 50px;
+}
+
+.header {
+    border-radius: 10px;
+    color: #4c4c4c;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 9px 9px 2px rgba(0, 0, 0, 0.14);
+}
+
+.leftcolumn { 
+    border-radius: 10px;
+    color: #4c4c4c;
+    text-align: center;
+    float: left;
+    width: 600px;
+}
+
+.navcolumn {
+    color: #4c4c4c;
+    text-align: center;
+    float: left;
+    width: 600px;
+}
+
+.rightcolumn {
+
+    color: #4c4c4c;
+    float: right;
+    width: 700px;
+}
+
+.image {
+    background-color: #aaa;
+    width: 95%;
+    padding: 20px;
+}
+
+.post {
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 9px 9px 2px rgba(0, 0, 0, 0.14);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Actor';
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Actor';
+    text-align: center;
+    border-radius: 5em;
+    color: #fff;
+    background: #96beff;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin-left: 0%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+}
+
