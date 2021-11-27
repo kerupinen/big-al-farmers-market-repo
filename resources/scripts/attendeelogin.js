@@ -17,7 +17,7 @@ function handleOnSubmit()
         })
     }).then(response => response.json())
     .then(function(data){
-        sessionStorage.setItem("loggedInAttendee",document.getElementById("userBox").value);
+        sessionStorage.setItem("loggedInAttendee",data.attendeeNum);
         window.location.href = "feedAttendee.html";
     }).catch(function(error){
         console.log(error);
