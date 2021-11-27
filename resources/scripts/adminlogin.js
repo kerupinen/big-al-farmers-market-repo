@@ -18,7 +18,7 @@ function handleOnSubmit()
     }).then(response => response.json())
     .then(function(json){
         sessionStorage.setItem("loggedInAdmin",json.adminNum);
-        window.location.href = "feed.html";
+        window.location.href = "feedAdmin.html";
         console.log(json);
     }).catch(function(error){
         console.log(error);
