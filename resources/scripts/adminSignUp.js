@@ -17,7 +17,7 @@ function handleOnSubmit()
         }).then(function(attendee){
         window.alert("You have been signed up!");
         window.location.href = "attendeelogin.html";
-        console.log(json);
+        console.log(attendee);
         }).catch(function(error){
         window.onerror = function()
         {
