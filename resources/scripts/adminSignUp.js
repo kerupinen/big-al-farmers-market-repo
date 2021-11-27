@@ -1,6 +1,6 @@
 function handleOnSubmit()
 {
-    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/admin";
+    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Admin";
     fetch(feedUrl, {
         method: "POST",
         headers: 
@@ -10,8 +10,8 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
-            username : document.getElementById(userBox),
-            password : document.getElementById(passBox)
+            username : document.getElementById("userBox"),
+            password : document.getElementById("passBox")
         })
 
         }).then(function(attendee){
