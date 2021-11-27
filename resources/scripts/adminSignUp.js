@@ -19,9 +19,10 @@ function handleOnSubmit()
         window.location.href = "attendeelogin.html";
         console.log(json);
         }).catch(function(error){
-        if(error)
+        window.onerror = function()
         {
         window.alert("A user with that username already exists!");
+        return true;
         }
         console.log(error);
     });
