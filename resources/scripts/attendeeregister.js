@@ -12,7 +12,7 @@ function registerAttendee()
         },
 
         body: JSON.stringify({
-            registrationNum : sessionStorage.getItem("loggedInAttendee")
+            RegistrationNum : sessionStorage.getItem("loggedInAttendee")
         })
     }).then(response => response.json())
     .then(function(attendee){
