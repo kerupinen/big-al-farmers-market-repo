@@ -22,6 +22,7 @@ function registerAttendee()
         }
         else{
             //window.alert("You were already signed up! Your Number is "+attendee.registrationNum);
+            window.alert("You have been registered! Your Number is " +attendee.registrationNum);
         }
         
         window.location.href = "feedAttendee.html";
