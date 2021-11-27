@@ -15,13 +15,13 @@ function registerAttendee()
             registrationNum : sessionStorage.getItem("loggedInAttendee")
         })
     }).then(response => response.json())
-    .then(function(json){
-        if(json.registrationNum!=0)
+    .then(function(attendee){
+        if(attendee.registrationNum!=0)
         {
-            window.alert("You have been registered! Your Number is " +json.registrationNum);
+            window.alert("You have been registered! Your Number is " +attendee.registrationNum);
         }
         else{
-            window.alert("You were already signed up! Your Number is "+json.registrationNum);
+            window.alert("You were already signed up! Your Number is "+attendee.registrationNum);
         }
         
         window.location.href = "feedAttendee.html";

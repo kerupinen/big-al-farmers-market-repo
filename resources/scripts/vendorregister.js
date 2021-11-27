@@ -13,13 +13,13 @@ function registerVendor()
             venNum : sessionStorage.getItem("loggedInVendor")
         })
     }).then(response => response.json())
-    .then(function(json){
-        if(json.RegisterSpot!=0)
+    .then(function(vendor){
+        if(vendor.RegisterSpot!=0)
         {
-            window.alert("You have been registered! Your Number is " +json.RegisterSpot);
+            window.alert("You have been registered! Your Number is " +vendor.RegisterSpot);
         }
         else{
-            window.alert("You were already signed up! Your Number is "+json.RegisterSpot);
+            window.alert("You were already signed up! Your Number is "+vendor.RegisterSpot);
         }
         
         window.location.href = "feedVendor.html";
