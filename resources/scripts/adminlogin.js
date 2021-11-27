@@ -17,7 +17,7 @@ function handleOnSubmit()
         })
     }).then(response => response.json())
     .then(function(json){
-        sessionStorage.setItem("loggedInAdmin",document.getElementById("userBox").value);
+        sessionStorage.setItem("loggedInAdmin",json.adminNum);
         window.location.href = "feed.html";
         console.log(json);
     }).catch(function(error){
