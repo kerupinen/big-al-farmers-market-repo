@@ -10,8 +10,8 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
-            username : document.getElementById("userBox"),
-            password : document.getElementById("passBox")
+            username : document.getElementById("userBox").value,
+            password : document.getElementById("passBox").value
         })
 
         }).then(function(attendee){
