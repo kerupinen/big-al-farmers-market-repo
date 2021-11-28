@@ -33,6 +33,15 @@ function handleOnLoad()
         console.log(error);
     });
 
+    const vendorsCountUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/report";
+    fetch(vendorsCountUrl).then(response => response.json())
+    .then(function(vendors){
+        console.log(vendors);
+        displayVendorCount(vendors);
+    }).catch(function(error){
+        console.log(error);
+    });
+
    
 }
 
@@ -49,6 +58,28 @@ function displayTable(vendors)
           dataTable.innerHTML = html;
 }
 
+function displayAttendeeCount(attendees)
+{
+          var newTable = document.getElementById("attendeeCountTable");
+          var htmls = "<table><tr><th>Attendee Count</th></tr>";
+          //attendees.forEach(attendees => {
+           htmls+=`<tr><td>${attendees}</td></tr>`;
+      
+          //});
+          htmls+="</table>";
+          newTable.innerHTML = htmls;
+
+}
+function displayVendorCount(vendorss)
+{
+          var newTable = document.getElementById("vendorCountTable");
+          var htmls = "<table><tr><th>Vendor Count</th></tr>";
+           htmls+=`<tr><td>${vendorss}</td></tr>`;
+          htmls+="</table>";
+          newTable.innerHTML = htmls;
+
+}
+
 function displayAttendee(attendees)
 {
           var newTable = document.getElementById("attendeeTable");
@@ -59,19 +90,6 @@ function displayAttendee(attendees)
           });
           htmls+="</table>";
           newTable.innerHTML = htmls;
-
-}
-
-function displayAttendee(attendees)
-{
-          /*var newTable = document.getElementById("attendeeTable");
-          var htmls = "<table><tr><th>Attendee Id</th><th>Attendee Registered Spot</th><th>Attendee Last Name</th><th>Attendee First Name</th></tr>";
-          attendees.forEach(attendees => {
-           htmls+=`<tr><td>${attendees.attendeeNum} </td><td>${attendees.registrationNum}</td><td>${attendees.lastName}</td><td>${attendees.firstName}</td></tr>`;
-      
-          });
-          htmls+="</table>";
-          newTable.innerHTML = htmls;*/
 
 }
 
