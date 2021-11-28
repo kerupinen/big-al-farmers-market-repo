@@ -39,6 +39,14 @@ function setFeed(vendors)
     html += `</div>`;
 });
 
+//close unordered list
+html += "</ul>";
+//add html
+venFeed.innerHTML = html;
+
+}
+
+
 function registerVendor()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/vendorRegister";
@@ -75,10 +83,6 @@ function registerVendor()
 
 
     
-//close unordered list
-html += "</ul>";
-//add html
-venFeed.innerHTML = html;
-}
+
 
 
