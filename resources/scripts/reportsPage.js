@@ -22,6 +22,18 @@ function handleOnLoad()
     }).catch(function(error){
         console.log(error);
     });
+
+    const attendeesCountUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Attendee/report";
+    fetch(attendeesCountUrl).then(response => response.json())
+    .then(function(attendees){
+        console.log(attendees);
+        //showing posts
+        displayAttendeeCount(attendees);
+    }).catch(function(error){
+        console.log(error);
+    });
+
+   
 }
 
 
@@ -49,6 +61,24 @@ function displayAttendee(attendees)
           newTable.innerHTML = htmls;
 
 }
+
+function displayAttendee(attendees)
+{
+          /*var newTable = document.getElementById("attendeeTable");
+          var htmls = "<table><tr><th>Attendee Id</th><th>Attendee Registered Spot</th><th>Attendee Last Name</th><th>Attendee First Name</th></tr>";
+          attendees.forEach(attendees => {
+           htmls+=`<tr><td>${attendees.attendeeNum} </td><td>${attendees.registrationNum}</td><td>${attendees.lastName}</td><td>${attendees.firstName}</td></tr>`;
+      
+          });
+          htmls+="</table>";
+          newTable.innerHTML = htmls;*/
+
+}
+
+
+
+
+
 
 function handleOnSubmit()
 {
