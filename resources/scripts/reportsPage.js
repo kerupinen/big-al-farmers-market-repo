@@ -49,3 +49,9 @@ function displayAttendee(attendees)
           newTable.innerHTML = htmls;
 
 }
+
+function handleOnSubmit()
+{
+    sessionStorage.removeItem("loggedInAdmin");
+    window.location.href= "feed.html";
+}
