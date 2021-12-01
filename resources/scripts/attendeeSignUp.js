@@ -16,8 +16,11 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
+            registrationNum : 0,
             username : document.getElementById("userBox").value,
-            password : document.getElementById("passBox").value
+            password : document.getElementById("passBox").value,
+            firstName : document.getElementById("firstBox").value,
+            lastName : document.getElementById("lastBox").value
         })
 
         
