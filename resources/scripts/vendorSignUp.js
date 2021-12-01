@@ -27,7 +27,7 @@ function handleOnSubmit()
         
         }).then(function(vendor){
         window.alert("You have been signed up!");
-        window.location.href = "vendorlogin.html";
+        window.location.href = "index.html";
         console.log(vendor);
         }).catch(function(error){
         window.onerror = function()
