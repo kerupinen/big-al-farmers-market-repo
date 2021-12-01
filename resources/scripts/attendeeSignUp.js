@@ -1,7 +1,7 @@
 function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Attendee/attendeePost";
-    if(document.getElementById("userBox").value==''||document.getElementById("passBox").value=='')
+    if(document.getElementById("userBox").value==''||document.getElementById("passBox").value==''||document.getElementById("firstBox").value==''||document.getElementById("lastBox").value=='')
         {
             window.alert("Please enter a value into each field");
         }
