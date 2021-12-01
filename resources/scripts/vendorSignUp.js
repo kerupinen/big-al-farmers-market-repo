@@ -16,12 +16,12 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
+            registerSpot : 0,
             username : document.getElementById("userBox").value,
             password : document.getElementById("passBox").value,
-            registerSpot : 0,
             merchType : document.getElementById("merchBox").value,
             images : document.getElementById("imageBox").value,
-            desc : document.getElementById("descBox").value
+            description : document.getElementById("descBox").value
         })
 
         
