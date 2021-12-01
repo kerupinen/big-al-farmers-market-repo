@@ -1,6 +1,12 @@
 function handleOnSubmit()
 {
     const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Admin/adminPost";
+    if(document.getElementById("userBox").value==''||document.getElementById("passBox").value=='')
+        {
+            window.alert("Please enter a value into each field");
+        }
+    else
+    {
     fetch(feedUrl, {
         method: "POST",
         headers: 
@@ -14,6 +20,7 @@ function handleOnSubmit()
             password : document.getElementById("passBox").value
         })
 
+        
         }).then(function(attendee){
         window.alert("You have been signed up!");
         window.location.href = "adminlogin.html";
@@ -26,5 +33,6 @@ function handleOnSubmit()
         }
         console.log(error);
     });
+    }
 
 }
