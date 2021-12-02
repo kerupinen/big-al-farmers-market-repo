@@ -19,7 +19,7 @@ function handleOnSubmit()
             username : document.getElementById("userBox").value,
             password : document.getElementById("passBox").value,
             registerSpot : 0,
-            venName : document.getElementById("nameBox").value,
+            vendorName : document.getElementById("nameBox").value,
             merchType : document.getElementById("merchBox").value,
             images : document.getElementById("imageBox").value,
             description : document.getElementById("descBox").value
