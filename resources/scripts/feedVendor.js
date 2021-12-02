@@ -65,10 +65,10 @@ function registerVendor()
     .then(function(vendor){
         if(vendor.RegisterSpot!=0)
         {
-            window.alert("You have been registered! Your Number is " +vendor.RegisterSpot);
+            window.alert("You have been registered! Your Number is " +vendor.registerSpot);
         }
         else{
-            window.alert("You have been registered! Your Number is "+vendor.RegisterSpot);
+            window.alert("You have been registered! Your Number is "+vendor.registerSpot);
         }
         
         window.location.href = "feedVendor.html";
