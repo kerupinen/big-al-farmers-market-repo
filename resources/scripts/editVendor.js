@@ -1,6 +1,6 @@
 function handleOnSubmit()
 {
-    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/"+sessionStorage.getItem("loggedInVendor");
+    const feedUrl = "https://big-als-farmers-market-backend.herokuapp.com/api/Vendor/"+ sessionStorage.getItem("loggedInVendor");
     if(document.getElementById("merchBox").value==''||document.getElementById("descBox").value==''||document.getElementById("nameBox").value=='')
         {
             window.alert("Please enter a value into each field");

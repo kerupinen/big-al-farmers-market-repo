@@ -66,13 +66,15 @@ function registerVendor()
         if(vendor.RegisterSpot==0)
         {
             window.alert("You have been registered! Your Number is " +vendor.RegisterSpot);
+            console.log(vendor.RegisterSpot);
         }
         else{
             window.alert("You have been registered! Your Number is "+vendor.RegisterSpot);
+            console.log(vendor.RegisterSpot);
         }
         
         window.location.href = "feedVendor.html";
-        console.log(json);
+        console.log(vendor);
     }).catch(function(error){
         console.log(error);
         //"login not found"
