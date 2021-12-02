@@ -59,7 +59,7 @@ function registerVendor()
         },
 
         body: JSON.stringify({
-            venNum : sessionStorage.getItem("loggedInVendor")
+            VenNum : sessionStorage.getItem("loggedInVendor")
         })
     }).then(response => response.json())
     .then(function(vendor){
