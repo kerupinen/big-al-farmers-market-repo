@@ -63,7 +63,7 @@ function registerVendor()
         })
     }).then(response => response.json())
     .then(function(vendor){
-        if(vendor.RegisterSpot==0)
+        if(vendor.RegisterSpot!=0)
         {
             window.alert("You have been registered! Your Number is " +vendor.RegisterSpot);
             console.log(vendor.RegisterSpot);
