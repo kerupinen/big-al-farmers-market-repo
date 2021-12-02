@@ -16,7 +16,6 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
-            registerSpot : 0,
             username : document.getElementById("userBox").value,
             password : document.getElementById("passBox").value,
             registerSpot : 0,
