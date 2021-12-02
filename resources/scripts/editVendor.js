@@ -16,10 +16,11 @@ function handleOnSubmit()
         },
 
         body: JSON.stringify({
+            venNum : sessionStorage.getItem("loggedInVendor"),
+            vendorName : document.getElementById("nameBox").value,
             merchType : document.getElementById("merchBox").value,
-            images : document.getElementById("imageBox").value,
-            desc : document.getElementById("descBox").value,
-            venName : document.getElementById("nameBox").value
+            image : document.getElementById("imageBox").value,
+            description : document.getElementById("descBox").value
         })
 
         
